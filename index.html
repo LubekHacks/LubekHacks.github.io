@@ -1,0 +1,100 @@
+
+<html>
+	<head>
+		<title>
+			Fractal Engine
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body onscroll="f_scroll()">
+		<img id="background_image" src="background_back.jpg">
+		<img id="background_logo" src="background_front.png">
+		<div id="page">
+			<div id="header">
+				<div id="background_dark"></div>
+				<img id="logo_text" src="logo_text.png">
+				<div id="header_slogan">
+					<div style="font-size:calc(6px + 1.5vw)">
+						Work In Progress Open Source 3D Game Engine .<br>
+					</div>
+					<div style="font-size:3.5vw">
+						<b>3D Game Engine</b>
+					</div>
+				</div>
+			</div>
+			<div id="content">
+				<div style="font-size:2.5vw">
+				<p align="center">
+				<a style="color:rgb(255, 255, 255)" href="Index.html" target="_blank"><b>Main Page</b></a>.
+				<a style="color:rgb(255, 255, 255)" href="https://github.com/kacperks/Fractal_Engine/releases" target="_blank"><b>Releases</b></a>.
+				<a style="color:rgb(255, 255, 255)" href="https://github.com/kacperks/Fractal_Engine" target="_blank"><b>Source Code</b></a>.
+				<a style="color:rgb(255, 255, 255)" href="https://discord.gg/zEKMdetX" target="_blank"><b>Discord</b></a>.
+			</p>
+			</div>
+			</div>
+            <div id="content">
+				<div class="desc_box">
+					
+					<video class="desc_image" autoplay>
+						<source src="video.mp4" type="video/mp4">
+					</video>
+
+					<div class="desc_text">
+                        <div style="font-size:3vw">
+                            <b>About the Engine</b><br>
+                        </div>
+                        <div style="font-size:1.5vw">
+                            <md-content>
+                            Supported Features:
+							<br>
+                            * Fully Featured ECS (Entity-Component-System)
+							<br>
+                            * OpenGL 3.3+ Rendering Engine
+							<br>
+                            * Loading 3D models and 2D textures with Assimp and STB
+							<br>
+                            * Textures, Models and Scenes Serializer (XML)
+							<br>
+                            * Scene Editor (Work In Progress)
+							<br>
+                            * Event System
+							<br>
+                            * Custom Math Engine
+							<br>
+                            * Audio (Work In Progress)
+							<br>
+                            * Custom Physics Engine (Work In Progress)
+                        </md-content>
+							<br>
+                            <a style="color:rgb(0, 255, 221)" href="https://github.com/kacperks/Fractal_Engine" target="_blank"><b>Check our GitHub page!!</b></a>.
+                            <br>
+                            <a style="color:rgb(98, 0, 255)" href="https://discord.gg/zEKMdetX" target="_blank"><b>Join our Discord Server</b></a>.
+                        </div>
+                    </div>
+				</div>
+			</div>
+            <br>
+            <br>
+			<div id="content">
+                     <div style="font-size:2vw">
+                        <b>Kacper Kostka 2021  </b><br>
+                    </div>
+				</div>
+                
+		</div>
+		
+	</body>
+	<script>
+        var image = document.getElementById("background_image");
+        image.style.top = 0;
+
+		function f_scroll(){
+			var image = document.getElementById("background_image");
+			image.style.top = window.pageYOffset/-6.0+"px";
+			
+			var logo = document.getElementById("background_logo");
+			logo.style.top = (window.pageYOffset/-2.0+300)+"px";
+		}
+		f_scroll();
+	</script>
+</html>
