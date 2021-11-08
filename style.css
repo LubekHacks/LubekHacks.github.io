@@ -1,0 +1,155 @@
+body{
+	margin:0;
+	overflow-x:hidden;
+	background:#000000;
+}
+
+@font-face {
+	/*Copyright (c) 2010-2014 by tyPoland Lukasz Dziedzic (team@latofonts.com) with Reserved Font Name "Lato"*/
+	font-family: Lato-Light;
+	src: url('Lato-Light.ttf');
+}
+
+div{
+	color:#FFFFFF;
+	font-family: Lato-Light;
+}
+
+#page{
+
+}
+
+#header{
+	height:20vw;
+}
+
+#header_slogan{
+	position:absolute;
+	text-align: center;
+	width:100vw;
+	top:13vw;
+}
+
+#background_dark{
+	position:absolute;
+	top:0px;
+	width:100vw;
+	height:20vw;
+	background:url('motif_dark.png');
+}
+
+#logo_text{
+	position:absolute;
+	left:50vw;
+	top:1vw;
+	margin-left:-45vw;
+	width:90vw;
+}
+
+#content{
+	position:relative;
+	width:100vw;
+
+	background:url('motif.png');
+}
+
+#background_image{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100vw;
+}
+#background_logo{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:60vw;
+	left:50vw;
+	margin-left:-30vw;
+}
+
+.desc_box:hover{
+	background-color:rgba(0,0,0,0.85);
+}
+
+.desc_box:hover .desc_image{
+	box-shadow: 0px 0px 20px 5px #00FFFF;
+}
+
+.desc_box:hover .desc_text{
+}
+
+
+
+.desc_box{
+	position:relative;
+	width:100vw;
+	height:32vw;
+	margin-top:5vw;
+	background-color:rgba(0,180,255,0.1);
+	transition: background-color 1s;
+}
+
+.desc_text{
+	position:absolute;
+	
+	margin-top:1.5vw;
+	margin-left:2vw;
+	margin-right:55vw;
+	text-align: right;
+}
+
+.desc_image{
+	position:absolute;
+	margin-top:1.5vw;
+	left:47vw;
+	width:50vw;
+	box-shadow: 0px 0px 20px 5px #000000;
+	
+	transition: box-shadow 1s;
+}
+
+.desc_right{
+	position:absolute;
+	margin-top:1.5vw;
+	left:47vw;
+	width:50vw;
+}
+
+.platform:hover{
+	transform: scale(1.0);
+}
+
+.platform{
+	width: 16vw;
+	transform: scale(0.95);
+	transition: transform 0.5s;
+}
+
+
+#footer{
+	position:relative;
+	width:100vw;
+	height:5vw;
+	margin-top:2.5vw;
+
+	background:url('motif_dark.png');
+	
+}
+
+#footer_logo{
+	margin-left:0.5vw;
+	width:5vw;
+	height:5vw;
+	
+	float:left;
+}
+
+#footer_text{
+	position:absolute;
+	width:100vw;
+	bottom:0;
+	text-align:center;
+	
+	font-size:calc(8px + 1vw);
+}
